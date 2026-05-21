@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veille SUVA — Polluants de la Construction</title>
+  <style>
+    :root {
+      --rouge:#c0392b; --orange:#d35400; --jaune:#b7950b;
+      --vert:#1e8449; --gris:#7f8c8d; --fond:#f4f6f7;
+      --blanc:#ffffff; --texte:#2c3e50; --bordure:#d5d8dc;
+    }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--fond); color:var(--texte); line-height:1.6; padding:1.5rem; }
+    header { max-width:860px; margin:0 auto 2rem; text-align:center; padding:2rem 1rem; background:var(--blanc); border-radius:12px; border:1px solid var(--bordure); }
+    header .logo { font-size:3rem; margin-bottom:.5rem; }
+    header h1 { font-size:1.6rem; margin-bottom:.4rem; }
+    header p { color:#555; font-size:.95rem; max-width:600px; margin:0 auto; }
+    .rss-box { max-width:860px; margin:0 auto 2rem; background:var(--blanc); border:2px solid #e67e22; border-radius:10px; padding:1.2rem 1.4rem; }
+    .rss-box h2 { font-size:1rem; color:#e67e22; margin-bottom:.8rem; }
+    .rss-row { display:flex; align-items:center; gap:.8rem; flex-wrap:wrap; }
+    .badge-rss { background:#e67e22; color:white; font-weight:700; font-size:.8rem; padding:.3rem .7rem; border-radius:4px; white-space:nowrap; }
+    .rss-url { font-family:monospace; font-size:.88rem; background:#fef9f0; border:1px solid var(--bordure); border-radius:4px; padding:.4rem .7rem; flex:1; word-break:break-all; min-width:200px; }
+    .btn { display:inline-block; padding:.45rem 1rem; border-radius:5px; border:none; font-size:.88rem; cursor:pointer; text-decoration:none; font-weight:600; white-space:nowrap; }
+    .btn-copy { background:var(--texte); color:white; }
+    .btn-xml  { background:#27ae60; color:white; }
+    .lecteurs { max-width:860px; margin:0 auto 2rem; background:var(--blanc); border:1px solid var(--bordure); border-radius:10px; padding:1.2rem 1.4rem; }
+    .lecteurs h2 { font-size:1rem; margin-bottom:.8rem; color:#555; }
+    .lecteurs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:.8rem; }
+    .lecteur-card { border:1px solid var(--bordure); border-radius:6px; padding:.8rem 1rem; font-size:.85rem; }
+    .lecteur-card strong { display:block; margin-bottom:.3rem; font-size:.95rem; }
+    .lecteur-card ol { padding-left:1.1rem; }
+    .lecteur-card li { margin-bottom:.2rem; }
+    .badge { display:inline-block; padding:.15rem .5rem; border-radius:3px; font-size:.75rem; font-weight:700; color:white; white-space:nowrap; }
+    .badge.amiante  { background:var(--rouge); }
+    .badge.hap      { background:var(--orange); }
+    .badge.pcb      { background:var(--orange); }
+    .badge.metaux   { background:#7d3c98; }
+    .badge.laines   { background:var(--vert); }
+    .badge.supprime { background:var(--gris); }
+    .fiches { max-width:860px; margin:0 auto 2rem; background:var(--blanc); border:1px solid var(--bordure); border-radius:10px; overflow:hidden; }
+    .fiches-header { display:flex; justify-content:space-between; align-items:center; padding:1rem 1.4rem; border-bottom:1px solid var(--bordure); }
+    .fiches-header h2 { font-size:1rem; }
+    .count-badge { background:var(--texte); color:white; border-radius:20px; font-size:.8rem; padding:.2rem .7rem; font-weight:700; }
+    table { width:100%; border-collapse:collapse; font-size:.85rem; }
+    thead th { background:var(--texte); color:white; padding:.6rem .9rem; text-align:left; }
+    tbody td { padding:.55rem .9rem; border-bottom:1px solid var(--bordure); vertical-align:top; }
+    tbody tr:last-child td { border-bottom:none; }
+    tbody tr:hover td { background:#f8f9fa; }
+    .td-num  { font-weight:700; white-space:nowrap; font-family:monospace; }
+    .td-date { white-space:nowrap; color:#777; font-size:.8rem; }
+    .auto-info { max-width:860px; margin:0 auto 2rem; background:#eafaf1; border:1px solid #a9dfbf; border-radius:10px; padding:1rem 1.4rem; font-size:.88rem; }
+    .auto-info h2 { font-size:.95rem; margin-bottom:.4rem; color:var(--vert); }
+    footer { max-width:860px; margin:1rem auto 0; text-align:center; font-size:.78rem; color:#aaa; }
+    footer a { color:#aaa; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">📡</div>
+  <h1>Veille SUVA — Polluants de la Construction</h1>
+  <p>Flux RSS de surveillance automatique des fiches techniques SUVA sur l'amiante, les HAP, les PCB, les métaux lourds et les laines minérales.</p>
+</header>
+
+<div class="rss-box">
+  <h2>📥 Abonnez-vous au flux RSS</h2>
+  <div class="rss-row">
+    <span class="badge-rss">RSS</span>
+    <span class="rss-url" id="rss-url">https://VOTRE_USERNAME.github.io/suva-rss/feed.xml</span>
+    <button class="btn btn-copy" onclick="copierURL()">📋 Copier</button>
+    <a class="btn btn-xml" href="feed.xml" target="_blank">🔗 Voir XML</a>
+  </div>
+</div>
+
+<div class="lecteurs">
+  <h2>📖 Comment utiliser ce flux dans votre lecteur RSS</h2>
+  <div class="lecteurs-grid">
+    <div class="lecteur-card">
+      <strong>📬 Outlook</strong>
+      <ol>
+        <li>Ouvrir Outlook</li>
+        <li>Clic droit sur <em>Flux RSS</em> dans le panneau gauche</li>
+        <li>Choisir <em>Ajouter un flux RSS…</em></li>
+        <li>Coller l'URL ci-dessus → OK</li>
+      </ol>
+    </div>
+    <div class="lecteur-card">
+      <strong>🟢 Feedly</strong>
+      <ol>
+        <li>Aller sur <a href="https://feedly.com" target="_blank">feedly.com</a></li>
+        <li>Cliquer sur <em>+ Add Content</em></li>
+        <li>Coller l'URL ci-dessus</li>
+        <li>Cliquer <em>Follow</em></li>
+      </ol>
+    </div>
+    <div class="lecteur-card">
+      <strong>🔵 Inoreader</strong>
+      <ol>
+        <li>Aller sur <a href="https://inoreader.com" target="_blank">inoreader.com</a></li>
+        <li>Cliquer sur <em>+ Abonnement</em></li>
+        <li>Coller l'URL ci-dessus</li>
+        <li>Confirmer l'abonnement</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div class="auto-info">
+  <h2>🔄 Mise à jour automatique</h2>
+  Ce flux est regénéré <strong>chaque lundi à 07h00</strong> via GitHub Actions.
+  Le statut de chaque lien SUVA est vérifié à chaque génération.
+  Les items affichent ✅ <em>Actif</em>, ↪️ <em>Redirigé</em> ou ❌ <em>Inactif</em> directement dans le titre.
+</div>
+
+<div class="fiches">
+  <div class="fiches-header">
+    <h2>📋 Fiches techniques surveillées</h2>
+    <span class="count-badge">25 fiches</span>
+  </div>
+  <table>
+    <thead>
+      <tr><th>N°</th><th>Titre</th><th>Catégorie</th><th>Màj</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="td-num">33031</td><td>Enlèvement panneaux légers amiantés à l'air libre</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">09.2023</td></tr>
+      <tr><td class="td-num">33036</td><td>Assainissement panneaux légers — surfaces &lt; 0,5 m²</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">33047</td><td>Enlèvement revêtements amiantés faiblement agglomérés</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33049</td><td>Colles bitumineuses et amiante fortement aggloméré</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33050</td><td>Colles non bitumineuses — amiante faiblement aggloméré</td><td><span class="badge supprime">Supprimée</span></td><td class="td-date">🗑️ 2020</td></tr>
+      <tr><td class="td-num">33056</td><td>Aspirateurs classe H — spécification amiante</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td></tr>
+      <tr><td class="td-num">33063</td><td>Mise en décharge — déchets amiantés fortement agglomérés</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">33063</td><td>Élimination — amiante faiblement aggloméré</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">33067</td><td>Perçage carrelage avec colle amiantée</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33073</td><td>Matériaux isolants amiantés — procédure de désamiantage</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">03.2022</td></tr>
+      <tr><td class="td-num">33074</td><td>Démontage tuyaux sans détérioration</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33075</td><td>Isolation tuyaux amiantés — découpage/cisaillement</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td></tr>
+      <tr><td class="td-num">33077</td><td>Enlèvement carreaux colle amiantée — jusqu'à 5 m²</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33098</td><td>Nettoyage équipements contaminés — infos loueurs</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">Mastic 1</td><td>Mastic fenêtres amianté — aperçu techniques de retrait</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">Mastic 3</td><td>Mastic fenêtres amianté — retrait par réchauffement</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">84024</td><td>Identifier et manipuler produits amiantés (dépliant)</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">01.2023</td></tr>
+      <tr><td class="td-num">84052</td><td>Règles de branche — plâtriers-peintres</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">84053</td><td>Règles de branche — techniciens du bâtiment</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
+      <tr><td class="td-num">84060</td><td>Règles vitales amiante — bâtiment et génie civil</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33106</td><td>Travaux sur matériaux contenant du goudron (HAP)</td><td><span class="badge hap">HAP</span></td><td class="td-date">11.2023</td></tr>
+      <tr><td class="td-num">33111</td><td>Déconstruction joints d'étanchéité PCB</td><td><span class="badge pcb">PCB</span></td><td class="td-date">04.2024</td></tr>
+      <tr><td class="td-num">33112</td><td>Décapage mécanique des peintures aux PCB</td><td><span class="badge pcb">PCB</span></td><td class="td-date">07.2024</td></tr>
+      <tr><td class="td-num">67165</td><td>Travaux anticorrosion — liste de contrôle métaux lourds</td><td><span class="badge metaux">Métaux lourds</span></td><td class="td-date">2022</td></tr>
+      <tr><td class="td-num">33097</td><td>Laine de verre et laine de roche — pose et dépose</td><td><span class="badge laines">Laines minérales</span></td><td class="td-date">2022</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  Généré automatiquement chaque lundi par GitHub Actions •
+  Sources : <a href="https://www.suva.ch" target="_blank">suva.ch</a> •
+  <a href="feed.xml" target="_blank">Flux XML brut</a>
+</footer>
+
+<script>
+function copierURL() {
+  const url = document.getElementById("rss-url").textContent.trim();
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = document.querySelector(".btn-copy");
+    const orig = btn.textContent;
+    btn.textContent = "✅ Copié !";
+    btn.style.background = "#27ae60";
+    setTimeout(() => { btn.textContent = orig; btn.style.background = ""; }, 2500);
+  });
+}
+</script>
+</body>
+</html>
