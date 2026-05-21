@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+  <channel>
+    <title>Veille Légale — Polluants de la Construction (CH)</title>
+    <link>https://GLU765.github.io/suva-rss/feed-legal.xml</link>
+    <description>Surveillance de la législation suisse sur les polluants du bâtiment : droit fédéral (OTConst, LAA, OLED...), législation cantonale (VD, GE, VS, FR, NE, BE, JU), normes CFST/ASCA/SIA et jurisprudence TF.</description>
+    <language>fr-CH</language>
+    <lastBuildDate>Thu, 21 May 2026 14:50:45 +0000</lastBuildDate>
+    <ttl>10080</ttl>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 832.311.141 — OTConst — Ordonnance sur les travaux de construction | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/2021/384/fr</link>
+      <description>Référence : RS 832.311.141 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2024 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Fixe les mesures de sécurité et protection de la santé dans les travaux de construction. Articles 82-86 spécifiques à l'amiante. Révisée en 2022, en vigueur depuis le 1er janvier 2022.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-otconst</guid>
+    </item>
+    <item>
+      <title>🏛️ 🇨🇭 [Loi fédérale] RS 832.20 — LAA — Loi fédérale sur l'assurance-accidents | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/1982/1676_1676_1676/fr</link>
+      <description>Référence : RS 832.20 | Type : Loi fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds, Laines minérales | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2023 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Oblige employeurs et personnel à prendre toutes les mesures nécessaires pour prévenir les maladies professionnelles, dont celles liées à l'amiante.</description>
+      <category>Loi fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-laa</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 832.30 — OPA — Ordonnance sur la prévention des accidents | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/1984/508_508_508/fr</link>
+      <description>Référence : RS 832.30 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Prescriptions générales de prévention des accidents professionnels, applicable en complément de l'OTConst pour les travaux sur polluants.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-opa</guid>
+    </item>
+    <item>
+      <title>🏛️ 🇨🇭 [Loi fédérale] RS 822.11 — LTr — Loi fédérale sur le travail dans l'industrie, l'artisanat et le commerce | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/fr</link>
+      <description>Référence : RS 822.11 | Type : Loi fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Base légale de l'OTConst. Régit la protection des travailleurs dans les entreprises industrielles et artisanales, incluant les chantiers de démolition.</description>
+      <category>Loi fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-ltr</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 814.600 — OLED — Ordonnance sur la limitation et l'élimination des déchets | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/2015/724/fr</link>
+      <description>Référence : RS 814.600 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Fixe les règles de tri, valorisation et élimination des déchets de chantier dangereux : amiante, plomb, HAP, PCB. Base pour la filière spécialisée.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-oled</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 814.610 — OMoD — Ordonnance sur les mouvements de déchets | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/2015/725/fr</link>
+      <description>Référence : RS 814.610 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Impose la traçabilité et le suivi via bordereaux électroniques ou papier (OMoD) pour tous les déchets dangereux de chantier.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-omod</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 814.680 — OSites — Ordonnance sur l'assainissement des sites pollués | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/1998/2261_2261_2261/fr</link>
+      <description>Référence : RS 814.680 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : HAP, Métaux lourds, PCB | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2021 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Régit l'investigation et l'assainissement des sites contaminés par des polluants, notamment HAP, métaux lourds et solvants chlorés.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-osites</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Ordonnance fédérale] RS 814.710 — ORNI — Ordonnance sur la protection contre le rayonnement non ionisant | ✅ Actif</title>
+      <link>https://www.fedlex.admin.ch/eli/cc/2000/110/fr</link>
+      <description>Référence : RS 814.710 | Type : Ordonnance fédérale | Niveau : Fédéral | Polluants : Général | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2021 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Applicable pour les travaux de construction à proximité d'installations électriques. Complément aux polluants physiques du bâtiment.</description>
+      <category>Ordonnance fédérale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fed-orni</guid>
+    </item>
+    <item>
+      <title>📐 🇨🇭 [Directive / Norme] CFST 6503 — Directive CFST n°6503 — Travaux présentant des risques particuliers (amiante) | ❌ Lien inactif</title>
+      <link>https://www.ekas.admin.ch/fr/directives/details/?id=6503</link>
+      <description>Référence : CFST 6503 | Type : Directive / Norme | Niveau : Norme nationale | Polluants : Amiante | Statut : ❌ Lien inactif | Dernière mise à jour connue : 01.01.2023 | Directive de la Commission fédérale de coordination pour la sécurité au travail (CFST). Précise les mesures d'évaluation du risque d'exposition à l'amiante lors de travaux de construction.</description>
+      <category>Directive / Norme</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>norm-cfst-6503</guid>
+    </item>
+    <item>
+      <title>📐 🇨🇭 [Directive / Norme] ASCA CDC Diagnostic — ASCA — Cahier des charges pour les diagnostics des polluants de construction | ❌ Lien inactif</title>
+      <link>https://www.asca-vabs.ch/fr/publications/cahiers-des-charges</link>
+      <description>Référence : ASCA CDC Diagnostic | Type : Directive / Norme | Niveau : Norme nationale | Polluants : Amiante, Plomb, PCB, HAP | Statut : ❌ Lien inactif | Dernière mise à jour connue : 01.01.2024 | Standard de qualité pour les missions de repérage amiante, plomb, PCB, HAP. Requis par les cantons VD, GE, FR, VS, NE pour les demandes d'autorisation de construire.</description>
+      <category>Directive / Norme</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>norm-asca-diagnostic</guid>
+    </item>
+    <item>
+      <title>📐 🇨🇭 [Directive / Norme] ASCA CDC Travaux — ASCA — Cahier des charges pour la direction des travaux de désamiantage | ❌ Lien inactif</title>
+      <link>https://www.asca-vabs.ch/fr/publications/cahiers-des-charges</link>
+      <description>Référence : ASCA CDC Travaux | Type : Directive / Norme | Niveau : Norme nationale | Polluants : Amiante | Statut : ❌ Lien inactif | Dernière mise à jour connue : 01.01.2023 | Définit le rôle et les missions du directeur de travaux spécialisé amiante pour toutes les phases d'assainissement.</description>
+      <category>Directive / Norme</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>norm-asca-travaux</guid>
+    </item>
+    <item>
+      <title>📐 🇨🇭 [Directive / Norme] SIA 416 — Norme SIA 416 — Surfaces et volumes de bâtiments | ✅ Actif</title>
+      <link>https://www.sia.ch/fr/services/normes/details/norm/416/</link>
+      <description>Référence : SIA 416 | Type : Directive / Norme | Niveau : Norme nationale | Polluants : Amiante | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Utilisée pour déterminer les seuils déclenchant l'obligation de diagnostic amiante (surface &gt; 20 m² de matériaux amiantés, volume &gt; 200 m³ de démolition).</description>
+      <category>Directive / Norme</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>norm-sia-416</guid>
+    </item>
+    <item>
+      <title>⚖️ 🇨🇭 [Jurisprudence] ATF — Tribunal fédéral — Jurisprudence du Tribunal fédéral — Amiante et polluants construction | ❌ Lien inactif</title>
+      <link>https://www.bger.ch/fr/index/juridiction/jurisdiction-inherit-template/jurisdiction-recht/jurisdiction-recht-leitentscheide-newindex.htm</link>
+      <description>Référence : ATF — Tribunal fédéral | Type : Jurisprudence | Niveau : Fédéral | Polluants : Amiante, PCB, HAP | Statut : ❌ Lien inactif | Dernière mise à jour connue : 01.01.2024 | Arrêts de principe du Tribunal fédéral sur la responsabilité civile liée à l'amiante, obligations du maître d'ouvrage, maladies professionnelles.</description>
+      <category>Jurisprudence</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>tf-jurisprudence</guid>
+    </item>
+    <item>
+      <title>🏠 🔵 VD [Loi cantonale] LATC art. 103a — VD — LATC art. 103a — Diagnostic amiante obligatoire avant travaux | 🔌 Injoignable</title>
+      <link>https://www.rsvd.ch/fr/Corpus/7/7_1/RSVaud_721_01.htm</link>
+      <description>Référence : LATC art. 103a | Type : Loi cantonale | Niveau : Cantonal — Canton : VD | Polluants : Amiante | Statut : 🔌 Injoignable | Dernière mise à jour connue : 01.03.2011 | Oblige tout propriétaire d'un bâtiment construit avant 1991 à réaliser un diagnostic amiante avant tout travaux soumis à autorisation. En vigueur depuis le 1er mars 2011.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>vd-latc-103a</guid>
+    </item>
+    <item>
+      <title>📋 🔵 VD [Règlement cantonal] RLATC art. 26b — VD — RLATC art. 26b — Contrôle qualitatif des rapports de diagnostic | 🔌 Injoignable</title>
+      <link>https://www.rsvd.ch/fr/Corpus/7/7_1/RSVaud_721_01_01.htm</link>
+      <description>Référence : RLATC art. 26b | Type : Règlement cantonal | Niveau : Cantonal — Canton : VD | Polluants : Amiante | Statut : 🔌 Injoignable | Dernière mise à jour connue : 01.03.2011 | Le département en charge des bâtiments de l'État assure un contrôle qualitatif des rapports de diagnostic lors des demandes d'autorisation de construire.</description>
+      <category>Règlement cantonal</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>vd-rlatc-26b</guid>
+    </item>
+    <item>
+      <title>📌 🔵 VD [Directive cantonale] Directive LATC amiante VD — VD — Directive d'application LATC — Diagnostic amiante | ✅ Actif</title>
+      <link>https://www.vd.ch/territoire-et-construction/amiante-1/bases-legales</link>
+      <description>Référence : Directive LATC amiante VD | Type : Directive cantonale | Niveau : Cantonal — Canton : VD | Polluants : Amiante | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2023 | Complète l'art. 103a LATC. Définit la procédure de diagnostic, les seuils d'intervention, les qualifications requises (liste FACH) et les formulaires.</description>
+      <category>Directive cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>vd-directive-amiante</guid>
+    </item>
+    <item>
+      <title>🏠 🔵 VD [Loi cantonale] LASP VD — VD — LASP — Loi sur l'assainissement des sites pollués | ✅ Actif</title>
+      <link>https://www.vd.ch/environnement/sites-pollues/legislation-et-documentation</link>
+      <description>Référence : LASP VD | Type : Loi cantonale | Niveau : Cantonal — Canton : VD | Polluants : HAP, Métaux lourds, PCB | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2006 | Règle l'application de l'OSites fédérale et le financement des mesures d'investigation et d'assainissement des sites pollués.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>vd-lasp</guid>
+    </item>
+    <item>
+      <title>🏠 🟡 GE [Loi cantonale] LCI GE — Polluants — GE — LCI — Loi sur les constructions et installations (diagnostic polluants) | ❌ Lien inactif</title>
+      <link>https://www.ge.ch/legislation/rsg/f/s/rsg_L5_05.html</link>
+      <description>Référence : LCI GE — Polluants | Type : Loi cantonale | Niveau : Cantonal — Canton : GE | Polluants : Amiante, Plomb, PCB, HAP, HBCD | Statut : ❌ Lien inactif | Dernière mise à jour connue : 01.01.2023 | Genève impose le diagnostic des 5 polluants principaux avant travaux : amiante, plomb, PCB, HAP et HBCD. Réglementation la plus stricte de Suisse romande.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>ge-lci-amiante</guid>
+    </item>
+    <item>
+      <title>📋 🟡 GE [Règlement cantonal] Règlement chantiers GE — GE — Règlement sur les chantiers — Gestion des déchets dangereux | ✅ Actif</title>
+      <link>https://www.ge.ch/document/nouvelle-ordonnance-securite-protection-sante-travailleurs-travaux-construction-ordonnance-travaux-construction/otconst-consultation-federale</link>
+      <description>Référence : Règlement chantiers GE | Type : Règlement cantonal | Niveau : Cantonal — Canton : GE | Polluants : Amiante, Plomb, PCB, HAP | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2023 | Pour les chantiers de plus de 200 m³, un plan de gestion des déchets est obligatoire à Genève. Traçabilité via bordereaux OMoD obligatoire.</description>
+      <category>Règlement cantonal</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>ge-reglement-chantier</guid>
+    </item>
+    <item>
+      <title>🏠 🔴 VS [Loi cantonale] LC VS — Amiante — VS — Loi sur les constructions — Diagnostic amiante, plomb, PCB | ✅ Actif</title>
+      <link>https://lex.vs.ch/app/fr/texts_of_law/705.1</link>
+      <description>Référence : LC VS — Amiante | Type : Loi cantonale | Niveau : Cantonal — Canton : VS | Polluants : Amiante, Plomb, PCB, HAP | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Le Valais exige un diagnostic amiante, plomb et PCB avant travaux sur bâtiments antérieurs à 1991 soumis à autorisation.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>vs-lc-amiante</guid>
+    </item>
+    <item>
+      <title>🏠 🟤 FR [Loi cantonale] LAC FR — Amiante — FR — Loi sur l'aménagement du territoire et les constructions — Polluants | ✅ Actif</title>
+      <link>https://bdlf.fr.ch/app/fr/texts_of_law/710.1</link>
+      <description>Référence : LAC FR — Amiante | Type : Loi cantonale | Niveau : Cantonal — Canton : FR | Polluants : Amiante, Plomb, PCB | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Fribourg exige un diagnostic amiante, plomb et PCB avant travaux sur bâtiments antérieurs à 1991.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>fr-lac-amiante</guid>
+    </item>
+    <item>
+      <title>🏠 🟢 NE [Loi cantonale] LConstr NE — Amiante — NE — Loi sur les constructions — Diagnostic amiante, plomb, PCB | ✅ Actif</title>
+      <link>https://rsn.ne.ch/DATA/program/books/RSN2021/20216/htm/7201.htm</link>
+      <description>Référence : LConstr NE — Amiante | Type : Loi cantonale | Niveau : Cantonal — Canton : NE | Polluants : Amiante, Plomb, PCB | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2021 | Neuchâtel exige un diagnostic amiante, plomb et PCB avant travaux. Le cadastre CANEPO est consulté lors des demandes d'autorisation.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>ne-lconstr-amiante</guid>
+    </item>
+    <item>
+      <title>🏠 🟡 BE [Loi cantonale] BauG BE — Polluants — BE — Loi sur les constructions (BauG) — Polluants de construction | ✅ Actif</title>
+      <link>https://www.belex.sites.be.ch/app/fr/texts_of_law/721.0</link>
+      <description>Référence : BauG BE — Polluants | Type : Loi cantonale | Niveau : Cantonal — Canton : BE | Polluants : Amiante, Plomb | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2022 | Berne exige une investigation des polluants (amiante, plomb) avant travaux sur bâtiments anciens. Le Laboratoire cantonal bernois est l'autorité compétente.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>be-baubg-amiante</guid>
+    </item>
+    <item>
+      <title>🏠 🔴 JU [Loi cantonale] LC JU — Amiante — JU — Loi sur les constructions — Diagnostic amiante | ❓ inconnu (500)</title>
+      <link>https://rsju.jura.ch/app/fr/texts_of_law/701.1</link>
+      <description>Référence : LC JU — Amiante | Type : Loi cantonale | Niveau : Cantonal — Canton : JU | Polluants : Amiante, Plomb | Statut : ❓ inconnu (500) | Dernière mise à jour connue : 01.01.2022 | Le Jura applique l'OTConst fédérale et exige un diagnostic amiante avant travaux sur bâtiments antérieurs à 1991 soumis à autorisation.</description>
+      <category>Loi cantonale</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>ju-lc-amiante</guid>
+    </item>
+    <item>
+      <title>📡 🇨🇭 [Flux RSS natif] Fedlex — Recueil officiel — FLUX RSS — Recueil officiel du droit fédéral (Fedlex) | ✅ Actif</title>
+      <link>https://fedlex.data.admin.ch/api/rss-oc-fr.xml</link>
+      <description>Référence : Fedlex — Recueil officiel | Type : Flux RSS natif | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds, Laines minérales | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2026 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-oc-fr.xml | Flux RSS officiel du Recueil officiel du droit fédéral. Mis à jour quotidiennement. À abonner directement dans votre lecteur RSS.</description>
+      <category>Flux RSS natif</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>rss-fedlex-ro</guid>
+    </item>
+    <item>
+      <title>📡 🇨🇭 [Flux RSS natif] Fedlex — Feuille fédérale — FLUX RSS — Feuille fédérale (Fedlex) | ✅ Actif</title>
+      <link>https://fedlex.data.admin.ch/api/rss-fga-fr.xml</link>
+      <description>Référence : Fedlex — Feuille fédérale | Type : Flux RSS natif | Niveau : Fédéral | Polluants : Amiante, PCB, HAP, Métaux lourds | Statut : ✅ Actif | Dernière mise à jour connue : 01.01.2026 | Flux RSS natif : https://fedlex.data.admin.ch/api/rss-fga-fr.xml | Flux RSS officiel de la Feuille fédérale. Contient les projets de lois, consultations et messages du Conseil fédéral.</description>
+      <category>Flux RSS natif</category>
+      <pubDate>Thu, 21 May 2026 14:50:45 +0000</pubDate>
+      <guid>rss-fedlex-ff</guid>
+    </item>
+  </channel>
+</rss>
