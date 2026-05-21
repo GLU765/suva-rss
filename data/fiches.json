@@ -1,0 +1,252 @@
+[
+  {
+    "id": "suva-33031",
+    "numero": "33031",
+    "titre": "Enlèvement de panneaux légers amiantés (fibrociment, vinyl, crépi) à l'air libre",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/retrait-de-panneaux-amiantees-a-l-air-libre/standard-variante--33031.F",
+    "statut": "actif",
+    "date_maj": "2023-09-01",
+    "description": "Mesures de protection pour enlever à l'air libre des panneaux amiantés (fibrociment, cushion vinyl, crépi). Destiné aux artisans et entreprises d'assainissement."
+  },
+  {
+    "id": "suva-33036",
+    "numero": "33036",
+    "titre": "Assainissement de panneaux légers amiantés par des entreprises reconnues — surfaces < 0,5 m²",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/retrait-de-panneaux-legers-amiantes-par-des-pros---fiche-thematique/retrait-de-panneaux-legers-amiantes-par-des-pros---fiche-thematique--33036.F",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Procédure de désamiantage pour des surfaces inférieures à 0,5 m² par local de travail. Réservé aux entreprises reconnues par la SUVA."
+  },
+  {
+    "id": "suva-33047",
+    "numero": "33047",
+    "titre": "Enlèvement de revêtements amiantés faiblement agglomérés (fibrociment, panneaux)",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33047.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Mesures de protection spécifiques pour les matériaux amiantés faiblement agglomérés, dont les panneaux en fibrociment."
+  },
+  {
+    "id": "suva-33049",
+    "numero": "33049",
+    "titre": "Revêtements de sols/parois : enlèvement de colles bitumineuses et amiante fortement aggloméré",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/enlever-les-revetements-de-sols-et-de-parois-contenant-de-l-amiante-fortement-agglomere-en-toute-securite/standard-variante--33049.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Procédure pour enlever les revêtements de sols et de parois (floor flex, cushion vinyl) avec colle bitumineuse contenant de l'amiante fortement aggloméré."
+  },
+  {
+    "id": "suva-33050",
+    "numero": "33050",
+    "titre": "Enlèvement de colles non bitumineuses et revêtements amiante faiblement aggloméré",
+    "categorie": "Amiante",
+    "url": "",
+    "statut": "supprimé",
+    "date_maj": "2020-01-01",
+    "description": "Cette fiche a été supprimée en 2020. Se référer à la fiche 33049 pour les travaux similaires."
+  },
+  {
+    "id": "suva-33056",
+    "numero": "33056",
+    "titre": "Aspirateurs de classe H avec spécification amiante",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/aspirateurs-de-classe-h-avec-specification-amiante---fiche-thematique--33056.F",
+    "statut": "actif",
+    "date_maj": "2022-04-01",
+    "description": "Utilisation correcte et sécurisée des aspirateurs industriels de classe H conformes à la norme EN 60335-2-69, avec exigence complémentaire amiante."
+  },
+  {
+    "id": "suva-33063-fort",
+    "numero": "33063",
+    "titre": "Mesures de protection pour la mise en décharge de déchets amiantés fortement agglomérés",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/mesures-de-protection-pour-la-mise-en-decharge-de-dechets-amiantes/standard-variante--33063.F",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Stockage, transport et élimination des déchets amiantés fortement agglomérés sans libération de fibres d'amiante."
+  },
+  {
+    "id": "suva-33063-faible",
+    "numero": "33063",
+    "titre": "Élimination à la décharge de l'amiante faiblement aggloméré",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/mesures-de-protection-lors-de-l-elimination-de-l-amiante-faiblement-agglomere/standard-variante--33063.F",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Procédure d'élimination des déchets contenant de l'amiante faiblement aggloméré, considérés comme déchets spéciaux."
+  },
+  {
+    "id": "suva-33067",
+    "numero": "33067",
+    "titre": "Perçage de carrelage comportant de la colle amiantée et revêtements synthétiques amiantés",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33067.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Mesures de protection lors du perçage de carrelages posés avec des colles contenant de l'amiante ou de revêtements synthétiques amiantés."
+  },
+  {
+    "id": "suva-33073",
+    "numero": "33073",
+    "titre": "Matériaux isolants amiantés — détermination de la procédure de désamiantage",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33073.F",
+    "statut": "actif",
+    "date_maj": "2022-03-01",
+    "description": "Guide pour déterminer la procédure adéquate lors du désamiantage de matériaux isolants dans des bâtiments construits avant 1990."
+  },
+  {
+    "id": "suva-33074",
+    "numero": "33074",
+    "titre": "Démontage de tuyaux sans détérioration — enlèvement de revêtements isolants bitumeux",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33074.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Technique de démontage sécurisé de tuyaux amiantés sans provoquer de détérioration, et enlèvement des revêtements isolants bitumeux."
+  },
+  {
+    "id": "suva-33075",
+    "numero": "33075",
+    "titre": "Isolation de tuyaux amiantés — découpage ou cisaillement (professionnels uniquement)",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/isolations-de-tuyaux-amiantees-3--decoupage-ou-cisaillement-de-tuyaux---fiche-thematique/standard-variante--33075.F",
+    "statut": "actif",
+    "date_maj": "2022-04-01",
+    "description": "Procédure réservée aux professionnels pour le découpage ou cisaillement de tuyaux dont l'isolation est amiantée."
+  },
+  {
+    "id": "suva-33077",
+    "numero": "33077",
+    "titre": "Enlèvement de carreaux de sols/parois avec colle amiantée — surfaces jusqu'à 5 m²",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33077.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Procédure pour le retrait de carreaux céramiques posés avec de la colle amiantée, pour des surfaces jusqu'à 5 m²."
+  },
+  {
+    "id": "suva-33098",
+    "numero": "33098",
+    "titre": "Nettoyage d'équipements contaminés par l'amiante — infos pour loueurs",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/nettoyage-d-equipements-contamines-par-l-amiante---infos-pour-loueurs--33098.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Guide destiné aux entreprises de location de machines pour le nettoyage sécurisé des équipements contaminés par l'amiante."
+  },
+  {
+    "id": "suva-mastic-1",
+    "numero": "Mastic-1",
+    "titre": "Mastic de fenêtres amianté 1 — Aperçu des techniques de retrait",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-CH/materiel/fiche-thematique/mastic-de-fenetres-amiante-1-apercu",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Vue d'ensemble des différentes techniques pour retirer le mastic de fenêtres amianté lors de changements de vitrages et de démolitions."
+  },
+  {
+    "id": "suva-mastic-3",
+    "numero": "Mastic-3",
+    "titre": "Mastic de fenêtres amianté 3 — Retrait par réchauffement",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-CH/materiel/fiche-thematique/mastic-de-fenetres-amiante-3-retrait-par-rechauffement",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Technique de retrait du mastic amianté par application de chaleur. Précautions spécifiques contre la libération de fibres."
+  },
+  {
+    "id": "suva-84024",
+    "numero": "84024",
+    "titre": "Identifier et manipuler correctement les produits amiantés (dépliant)",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/regles-et-conseils/standard-variante--84024.F",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Dépliant de 34 pages avec photos pratiques pour reconnaître l'amiante dans les bâtiments et adopter les bons comportements de protection."
+  },
+  {
+    "id": "suva-84052",
+    "numero": "84052",
+    "titre": "Règles de branche amiante pour les plâtriers-peintres",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/regles-et-conseils/standard-variante--84052.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Prescriptions spécifiques à la branche peinture-plâtrerie pour la manipulation sécurisée des matériaux amiantés."
+  },
+  {
+    "id": "suva-84053",
+    "numero": "84053",
+    "titre": "Règles de branche amiante pour les techniciens du bâtiment",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/regles-et-conseils/identifier--evaluer-et-manipuler-correctement-les-produits-amiantesregles-de-la-branche-pour-les-techniciens-du-batiment/identifier--evaluer-et-manipuler-correctement-les-produits-amiantesregles-de-la-branche-pour-les-techniciens-du-batiment--84053.F",
+    "statut": "actif",
+    "date_maj": "2023-01-01",
+    "description": "Règles et procédures pour les techniciens du bâtiment confrontés à l'amiante lors de travaux de rénovation ou de maintenance."
+  },
+  {
+    "id": "suva-84060",
+    "numero": "84060",
+    "titre": "Règles vitales amiante — bâtiment et génie civil",
+    "categorie": "Amiante",
+    "url": "https://www.suva.ch/fr-ch/download/regles-et-conseils/regles-vitales-amiante---batiment-et-genie-civil/regles-vitales-amiante---batiment-et-genie-civil--84060.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Brochure sur les règles vitales à respecter pour protéger les travailleurs du bâtiment et du génie civil exposés à l'amiante."
+  },
+  {
+    "id": "suva-33106",
+    "numero": "33106",
+    "titre": "Travaux sur des matériaux contenant du goudron — transformation et déconstruction",
+    "categorie": "HAP",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/transformation-et-deconstruction-de-materiaux-contenant-du-goudron/standard-variante--33106.F",
+    "statut": "actif",
+    "date_maj": "2023-11-01",
+    "description": "Mesures de protection lors de travaux sur des matériaux contenant du goudron (HAP cancérogènes). Concerne les bâtiments construits avant 1990."
+  },
+  {
+    "id": "suva-33111",
+    "numero": "33111",
+    "titre": "Déconstruction des joints d'étanchéité contenant des PCB",
+    "categorie": "PCB",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/des-joints-d-etancheite-contenant-des-pcb/standard-variante--33111.F",
+    "statut": "actif",
+    "date_maj": "2024-04-01",
+    "description": "Procédure sécurisée pour la déconstruction des joints contenant des PCB, utilisés jusqu'au milieu des années 1970."
+  },
+  {
+    "id": "suva-33112",
+    "numero": "33112",
+    "titre": "Décapage mécanique des peintures aux PCB",
+    "categorie": "PCB",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/33112-pcb-haltige-farben/attention-lors-du-decapage-mecanique-des-peintures-aux-pcb--33112.F",
+    "statut": "actif",
+    "date_maj": "2024-07-01",
+    "description": "Risques et mesures de protection lors du décapage mécanique de peintures contenant des PCB."
+  },
+  {
+    "id": "suva-67165",
+    "numero": "67165",
+    "titre": "Travaux de protection contre la corrosion — liste de contrôle (métaux lourds)",
+    "categorie": "Métaux lourds",
+    "url": "https://www.suva.ch/fr-ch/download/listes-de-controle/standard-variante--67165.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Liste de contrôle pour les travaux sur des revêtements anticorrosion pouvant contenir des métaux lourds (plomb, chrome, cadmium)."
+  },
+  {
+    "id": "suva-33097",
+    "numero": "33097",
+    "titre": "Laine de verre et laine de roche — pose et dépose en sécurité",
+    "categorie": "Laines minérales",
+    "url": "https://www.suva.ch/fr-ch/download/fiches-thematiques/laine-de-verre-et-laine-de-roche--pose-et-depose-en-securite/standard-variante--33097.F",
+    "statut": "actif",
+    "date_maj": "2022-01-01",
+    "description": "Mesures de protection pour la manipulation, la pose et la dépose de laine de roche et de laine de verre."
+  }
+]
