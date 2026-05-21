@@ -363,7 +363,6 @@
     "description": "Flux RSS officiel de la Feuille fédérale. Contient les projets de lois, consultations et messages du Conseil fédéral.",
     "polluants": ["Amiante", "PCB", "HAP", "Métaux lourds"]
   },
-  ,
   {
     "id": "ge-rsdeb",
     "reference": "RSDEB K 1 70.14",
