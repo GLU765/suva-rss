@@ -16,7 +16,7 @@ OUT_DIR   = ROOT / "docs"
 OUT_FILE  = OUT_DIR / "feed.xml"
 
 # ⚠️  Remplacez VOTRE_USERNAME par votre nom GitHub
-GITHUB_USERNAME = "VOTRE_USERNAME"
+GITHUB_USERNAME = "GLU765"
 GITHUB_REPO     = "suva-rss"
 
 FEED_TITLE       = "Veille SUVA — Polluants de la Construction"
