@@ -1,0 +1,38 @@
+name: Générer le flux RSS SUVA
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+
+jobs:
+  generer-flux:
+    name: Générer et publier feed.xml
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Installer les dépendances
+        run: pip install requests
+
+      - name: ⚙️ Générer le flux RSS
+        run: python scripts/generate_rss.py
+
+      - name: 💾 Sauvegarder et publier feed.xml
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/feed.xml
+          git diff --cached --quiet \
+            && echo "✅ Aucun changement détecté." \
+            || git commit -m "🔄 Flux RSS mis à jour — $(date +'%d.%m.%Y %H:%M UTC')"
+          git push
