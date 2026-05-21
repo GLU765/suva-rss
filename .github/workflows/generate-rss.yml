@@ -7,7 +7,7 @@ on:
 
 jobs:
   generer-flux:
-    name: Générer et publier feed.xml
+    name: Générer feed.xml et feed-legal.xml
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,14 +24,17 @@ jobs:
       - name: 📦 Installer les dépendances
         run: pip install requests
 
-      - name: ⚙️ Générer le flux RSS
+      - name: ⚙️ Générer le flux RSS — Fiches SUVA
         run: python scripts/generate_rss.py
 
-      - name: 💾 Sauvegarder et publier feed.xml
+      - name: ⚖️ Générer le flux RSS — Veille légale
+        run: python scripts/generate_rss_legal.py
+
+      - name: 💾 Sauvegarder et publier les deux flux
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/feed.xml
+          git add docs/feed.xml docs/feed-legal.xml
           git diff --cached --quiet \
             && echo "✅ Aucun changement détecté." \
             || git commit -m "🔄 Flux RSS mis à jour — $(date +'%d.%m.%Y %H:%M UTC')"
