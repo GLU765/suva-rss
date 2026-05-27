@@ -6,54 +6,66 @@
   <title>Veille SUVA & Légale — Polluants Construction</title>
   <style>
     :root {
-      --rouge:#c0392b; --orange:#d35400; --jaune:#b7950b;
-      --vert:#1e8449; --bleu:#2471a3; --violet:#7d3c98;
-      --gris:#7f8c8d; --fond:#f4f6f7; --blanc:#ffffff;
-      --texte:#2c3e50; --bordure:#d5d8dc;
+      --rouge:#c0392b; --orange:#d35400; --vert:#1e8449;
+      --bleu:#2471a3; --violet:#7d3c98; --gris:#7f8c8d;
+      --fond:#f4f6f7; --blanc:#ffffff; --texte:#2c3e50; --bordure:#d5d8dc;
     }
     *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
     body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--fond); color:var(--texte); line-height:1.6; padding:1.5rem; }
-    header { max-width:900px; margin:0 auto 2rem; text-align:center; padding:2rem 1rem; background:var(--blanc); border-radius:12px; border:1px solid var(--bordure); }
+
+    header { max-width:960px; margin:0 auto 2rem; text-align:center; padding:2rem 1rem; background:var(--blanc); border-radius:12px; border:1px solid var(--bordure); }
     header .logo { font-size:2.5rem; margin-bottom:.5rem; }
     header h1 { font-size:1.5rem; margin-bottom:.4rem; }
     header p { color:#555; font-size:.9rem; max-width:650px; margin:0 auto; }
-    .flux-grid { max-width:900px; margin:0 auto 2rem; display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
+
+    .flux-grid { max-width:960px; margin:0 auto 2rem; display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; }
     @media(max-width:640px){ .flux-grid { grid-template-columns:1fr; } }
     .flux-card { background:var(--blanc); border-radius:10px; padding:1.2rem 1.4rem; border:2px solid; }
     .flux-card.suva  { border-color:#e67e22; }
     .flux-card.legal { border-color:var(--bleu); }
-    .flux-card h2 { font-size:.95rem; margin-bottom:.8rem; display:flex; align-items:center; gap:.5rem; }
+    .flux-card h2 { font-size:.95rem; margin-bottom:.8rem; }
     .flux-card.suva  h2 { color:#e67e22; }
     .flux-card.legal h2 { color:var(--bleu); }
     .flux-row { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
     .badge-rss { font-weight:700; font-size:.75rem; padding:.25rem .6rem; border-radius:4px; color:white; white-space:nowrap; }
     .badge-rss.suva  { background:#e67e22; }
     .badge-rss.legal { background:var(--bleu); }
-    .rss-url { font-family:monospace; font-size:.8rem; background:#f8f9fa; border:1px solid var(--bordure); border-radius:4px; padding:.3rem .6rem; flex:1; word-break:break-all; min-width:160px; }
-    .btn { display:inline-block; padding:.35rem .8rem; border-radius:5px; border:none; font-size:.8rem; cursor:pointer; font-weight:600; text-decoration:none; white-space:nowrap; }
+    .rss-url { font-family:monospace; font-size:.78rem; background:#f8f9fa; border:1px solid var(--bordure); border-radius:4px; padding:.3rem .6rem; flex:1; word-break:break-all; min-width:160px; }
+    .btn { display:inline-block; padding:.35rem .8rem; border-radius:5px; border:none; font-size:.78rem; cursor:pointer; font-weight:600; text-decoration:none; white-space:nowrap; }
     .btn-copy { background:var(--texte); color:white; }
     .btn-xml  { background:var(--vert);  color:white; }
-    .fedlex-box { max-width:900px; margin:0 auto 2rem; background:#eaf4fb; border:1px solid #aed6f1; border-radius:10px; padding:1.1rem 1.4rem; }
+
+    .fedlex-box { max-width:960px; margin:0 auto 2rem; background:#eaf4fb; border:1px solid #aed6f1; border-radius:10px; padding:1.1rem 1.4rem; }
     .fedlex-box h2 { font-size:.95rem; color:var(--bleu); margin-bottom:.8rem; }
     .fedlex-item { display:flex; align-items:center; gap:.8rem; margin-bottom:.5rem; flex-wrap:wrap; }
     .fedlex-item:last-child { margin-bottom:0; }
     .fedlex-label { font-size:.85rem; flex:1; min-width:200px; }
-    .fedlex-url { font-family:monospace; font-size:.78rem; color:var(--bleu); word-break:break-all; }
-    .section { max-width:900px; margin:0 auto 2rem; background:var(--blanc); border:1px solid var(--bordure); border-radius:10px; overflow:hidden; }
+    .fedlex-url { font-family:monospace; font-size:.76rem; color:var(--bleu); word-break:break-all; }
+
+    .section { max-width:960px; margin:0 auto 2rem; background:var(--blanc); border:1px solid var(--bordure); border-radius:10px; overflow:hidden; }
     .section-header { display:flex; justify-content:space-between; align-items:center; padding:.9rem 1.3rem; border-bottom:1px solid var(--bordure); }
     .section-header h2 { font-size:1rem; }
-    .count-badge { background:var(--texte); color:white; border-radius:20px; font-size:.78rem; padding:.2rem .7rem; font-weight:700; }
+    .count-badge { background:var(--texte); color:white; border-radius:20px; font-size:.76rem; padding:.2rem .7rem; font-weight:700; }
+
     table { width:100%; border-collapse:collapse; font-size:.82rem; }
-    thead th { background:var(--texte); color:white; padding:.55rem .8rem; text-align:left; }
-    tbody td { padding:.5rem .8rem; border-bottom:1px solid var(--bordure); vertical-align:top; }
+    thead th { background:var(--texte); color:white; padding:.55rem .8rem; text-align:left; font-weight:600; }
+    tbody td { padding:.5rem .8rem; border-bottom:1px solid var(--bordure); vertical-align:middle; }
     tbody tr:last-child td { border-bottom:none; }
-    tbody tr:hover td { background:#f8f9fa; }
-    .td-ref  { font-weight:700; white-space:nowrap; font-family:monospace; font-size:.8rem; }
-    .td-date { white-space:nowrap; color:#777; font-size:.78rem; }
-    .badge { display:inline-block; padding:.12rem .45rem; border-radius:3px; font-size:.72rem; font-weight:700; color:white; white-space:nowrap; }
+
+    /* Lignes cliquables */
+    tbody tr.clickable { cursor:pointer; transition:background .15s; }
+    tbody tr.clickable:hover td { background:#eaf4fb; }
+    tbody tr.clickable:hover .lien-icone { opacity:1; }
+    .lien-icone { opacity:0; font-size:.75rem; color:var(--bleu); transition:opacity .15s; margin-left:.3rem; }
+    .td-ref  { font-weight:700; white-space:nowrap; font-family:monospace; font-size:.78rem; }
+    .td-titre a { color:var(--texte); text-decoration:none; }
+    .td-titre a:hover { color:var(--bleu); text-decoration:underline; }
+    .td-date { white-space:nowrap; color:#777; font-size:.76rem; }
+
+    .badge { display:inline-block; padding:.12rem .45rem; border-radius:3px; font-size:.7rem; font-weight:700; color:white; white-space:nowrap; }
     .badge.fed     { background:var(--bleu); }
     .badge.vd      { background:#2471a3; }
-    .badge.ge      { background:#d4ac0d; color:#333; }
+    .badge.ge      { background:#b7950b; color:#fff; }
     .badge.vs      { background:var(--rouge); }
     .badge.fr      { background:#784212; }
     .badge.ne      { background:var(--vert); }
@@ -62,14 +74,16 @@
     .badge.norme   { background:var(--violet); }
     .badge.juris   { background:#1a5276; }
     .badge.amiante { background:var(--rouge); }
-    .badge.hap     { background:var(--orange); }
-    .badge.pcb     { background:var(--orange); }
+    .badge.hap     { background:#d35400; }
+    .badge.pcb     { background:#d35400; }
     .badge.metaux  { background:var(--violet); }
     .badge.laines  { background:var(--vert); }
     .badge.supprime{ background:var(--gris); }
-    .auto-info { max-width:900px; margin:0 auto 2rem; background:#eafaf1; border:1px solid #a9dfbf; border-radius:10px; padding:1rem 1.4rem; font-size:.87rem; }
+    .badge.rss-nat { background:#e67e22; }
+
+    .auto-info { max-width:960px; margin:0 auto 2rem; background:#eafaf1; border:1px solid #a9dfbf; border-radius:10px; padding:1rem 1.4rem; font-size:.87rem; }
     .auto-info h2 { font-size:.95rem; margin-bottom:.4rem; color:var(--vert); }
-    footer { max-width:900px; margin:1rem auto 0; text-align:center; font-size:.76rem; color:#aaa; }
+    footer { max-width:960px; margin:1rem auto 0; text-align:center; font-size:.76rem; color:#aaa; }
     footer a { color:#aaa; }
   </style>
 </head>
@@ -78,52 +92,56 @@
 <header>
   <div class="logo">📡⚖️</div>
   <h1>Veille SUVA & Légale — Polluants de la Construction</h1>
-  <p>Deux flux RSS complémentaires : fiches techniques SUVA et législation suisse applicable (fédéral + cantons VD, GE, VS, FR, NE, BE, JU).</p>
+  <p>Deux flux RSS : fiches techniques SUVA et législation suisse applicable.<br>
+  Fédéral + cantons VD, GE, VS, FR, NE, BE, JU — Cliquez sur chaque ligne pour accéder au document officiel.</p>
 </header>
 
+<!-- Flux RSS -->
 <div class="flux-grid">
   <div class="flux-card suva">
     <h2>📋 Flux RSS — Fiches SUVA</h2>
     <div class="flux-row">
       <span class="badge-rss suva">RSS</span>
-      <span class="rss-url" id="url-suva">https://glu765.github.io/suva-rss/feed.xml</span>
-      <button class="btn btn-copy" onclick="copier('url-suva', this)">📋</button>
+      <span class="rss-url" id="url-suva">https://GLU765.github.io/suva-rss/feed.xml</span>
+      <button class="btn btn-copy" onclick="copier('url-suva',this)">📋</button>
       <a class="btn btn-xml" href="feed.xml" target="_blank">XML</a>
     </div>
-    <p style="font-size:.8rem;color:#777;margin-top:.6rem;">25 fiches • Mis à jour chaque lundi</p>
+    <p style="font-size:.78rem;color:#777;margin-top:.5rem;">25 fiches • Mis à jour chaque lundi</p>
   </div>
   <div class="flux-card legal">
     <h2>⚖️ Flux RSS — Veille Légale</h2>
     <div class="flux-row">
       <span class="badge-rss legal">RSS</span>
-      <span class="rss-url" id="url-legal">https://glu765.github.io/suva-rss/feed-legal.xml</span>
-      <button class="btn btn-copy" onclick="copier('url-legal', this)">📋</button>
+      <span class="rss-url" id="url-legal">https://GLU765.github.io/suva-rss/feed-legal.xml</span>
+      <button class="btn btn-copy" onclick="copier('url-legal',this)">📋</button>
       <a class="btn btn-xml" href="feed-legal.xml" target="_blank">XML</a>
     </div>
-    <p style="font-size:.8rem;color:#777;margin-top:.6rem;">49 textes légaux • Fédéral + 7 cantons • Mis à jour chaque lundi</p>
+    <p style="font-size:.78rem;color:#777;margin-top:.5rem;">49 textes légaux • Fédéral + 7 cantons • Mis à jour chaque lundi</p>
   </div>
 </div>
 
+<!-- Fedlex natifs -->
 <div class="fedlex-box">
   <h2>📡 Flux RSS natifs Fedlex — à abonner directement dans votre lecteur</h2>
   <div class="fedlex-item">
-    <span class="fedlex-label">🏛️ <strong>Recueil officiel du droit fédéral</strong> (nouvelles lois et ordonnances)</span>
+    <span class="fedlex-label">🏛️ <strong>Recueil officiel</strong> (nouvelles lois et ordonnances)</span>
     <span class="fedlex-url">https://fedlex.data.admin.ch/api/rss-oc-fr.xml</span>
-    <button class="btn btn-copy" onclick="copierTexte('https://fedlex.data.admin.ch/api/rss-oc-fr.xml', this)">📋</button>
+    <button class="btn btn-copy" onclick="copierTexte('https://fedlex.data.admin.ch/api/rss-oc-fr.xml',this)">📋</button>
   </div>
   <div class="fedlex-item">
-    <span class="fedlex-label">📰 <strong>Feuille fédérale</strong> (projets de lois, consultations, messages du CF)</span>
+    <span class="fedlex-label">📰 <strong>Feuille fédérale</strong> (projets de lois, consultations)</span>
     <span class="fedlex-url">https://fedlex.data.admin.ch/api/rss-fga-fr.xml</span>
-    <button class="btn btn-copy" onclick="copierTexte('https://fedlex.data.admin.ch/api/rss-fga-fr.xml', this)">📋</button>
+    <button class="btn btn-copy" onclick="copierTexte('https://fedlex.data.admin.ch/api/rss-fga-fr.xml',this)">📋</button>
   </div>
 </div>
 
+<!-- Mise à jour -->
 <div class="auto-info">
-  <h2>🔄 Mise à jour automatique</h2>
-  Les deux flux sont regénérés <strong>chaque lundi à 07h00</strong> via GitHub Actions.
-  Chaque lien est vérifié automatiquement. Les items affichent ✅ Actif, ↪️ Redirigé ou ❌ Inactif dans le titre.
+  <h2>🔄 Mise à jour automatique chaque lundi à 07h00</h2>
+  Les deux flux sont régénérés automatiquement via GitHub Actions. Chaque lien est vérifié : ✅ Actif, ↪️ Redirigé ou ❌ Inactif apparaît dans le titre de chaque item RSS.
 </div>
 
+<!-- LÉGISLATION FÉDÉRALE -->
 <div class="section">
   <div class="section-header">
     <h2>🏛️ Législation fédérale</h2>
@@ -132,18 +150,51 @@
   <table>
     <thead><tr><th>Référence</th><th>Titre</th><th>Type</th><th>Màj</th></tr></thead>
     <tbody>
-      <tr><td class="td-ref">RS 832.311.141</td><td>OTConst — Ordonnance sur les travaux de construction</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2024</td></tr>
-      <tr><td class="td-ref">RS 832.20</td><td>LAA — Loi fédérale sur l'assurance-accidents</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2023</td></tr>
-      <tr><td class="td-ref">RS 832.30</td><td>OPA — Ordonnance sur la prévention des accidents</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">RS 822.11</td><td>LTr — Loi fédérale sur le travail</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">RS 814.600</td><td>OLED — Ordonnance sur l'élimination des déchets</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">RS 814.610</td><td>OMoD — Ordonnance sur les mouvements de déchets</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">RS 814.680</td><td>OSites — Ordonnance sur l'assainissement des sites pollués</td><td><span class="badge fed">Fédéral</span></td><td class="td-date">2021</td></tr>
-      <tr><td class="td-ref">ATF</td><td>Jurisprudence Tribunal fédéral — amiante et polluants</td><td><span class="badge juris">Jurisprudence</span></td><td class="td-date">2024</td></tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/2021/384/fr')">
+        <td class="td-ref">RS 832.311.141</td>
+        <td class="td-titre">OTConst — Ordonnance sur les travaux de construction <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2024</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/1982/1676_1676_1676/fr')">
+        <td class="td-ref">RS 832.20</td>
+        <td class="td-titre">LAA — Loi fédérale sur l'assurance-accidents <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/1984/508_508_508/fr')">
+        <td class="td-ref">RS 832.30</td>
+        <td class="td-titre">OPA — Ordonnance sur la prévention des accidents <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/1966/57_57_57/fr')">
+        <td class="td-ref">RS 822.11</td>
+        <td class="td-titre">LTr — Loi fédérale sur le travail <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/2015/724/fr')">
+        <td class="td-ref">RS 814.600</td>
+        <td class="td-titre">OLED — Ordonnance sur l'élimination des déchets <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/2015/725/fr')">
+        <td class="td-ref">RS 814.610</td>
+        <td class="td-titre">OMoD — Ordonnance sur les mouvements de déchets <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fedlex.admin.ch/eli/cc/1998/2261_2261_2261/fr')">
+        <td class="td-ref">RS 814.680</td>
+        <td class="td-titre">OSites — Ordonnance sur l'assainissement des sites pollués <span class="lien-icone">↗</span></td>
+        <td><span class="badge fed">Fédéral</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.bger.ch/fr/index/juridiction/jurisdiction-inherit-template/jurisdiction-recht/jurisdiction-recht-leitentscheide-newindex.htm')">
+        <td class="td-ref">ATF</td>
+        <td class="td-titre">Jurisprudence Tribunal fédéral — amiante et polluants <span class="lien-icone">↗</span></td>
+        <td><span class="badge juris">Jurisprudence</span></td><td class="td-date">2024</td>
+      </tr>
     </tbody>
   </table>
 </div>
 
+<!-- NORMES -->
 <div class="section">
   <div class="section-header">
     <h2>📐 Normes CFST / ASCA / SIA</h2>
@@ -152,75 +203,353 @@
   <table>
     <thead><tr><th>Référence</th><th>Titre</th><th>Type</th><th>Màj</th></tr></thead>
     <tbody>
-      <tr><td class="td-ref">CFST 6503</td><td>Directive CFST n°6503 — Travaux présentant des risques particuliers (amiante)</td><td><span class="badge norme">Norme</span></td><td class="td-date">2023</td></tr>
-      <tr><td class="td-ref">ASCA CDC</td><td>Cahier des charges pour les diagnostics des polluants de construction</td><td><span class="badge norme">Norme</span></td><td class="td-date">2024</td></tr>
-      <tr><td class="td-ref">ASCA Travaux</td><td>Cahier des charges pour la direction des travaux de désamiantage</td><td><span class="badge norme">Norme</span></td><td class="td-date">2023</td></tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ekas.admin.ch/fr/directives/details/?id=6503')">
+        <td class="td-ref">CFST 6503</td>
+        <td class="td-titre">Directive CFST n°6503 — Travaux présentant des risques particuliers (amiante) <span class="lien-icone">↗</span></td>
+        <td><span class="badge norme">Norme</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.asca-vabs.ch/fr/publications/cahiers-des-charges')">
+        <td class="td-ref">ASCA CDC</td>
+        <td class="td-titre">Cahier des charges pour les diagnostics des polluants de construction <span class="lien-icone">↗</span></td>
+        <td><span class="badge norme">Norme</span></td><td class="td-date">2024</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.asca-vabs.ch/fr/publications/cahiers-des-charges')">
+        <td class="td-ref">ASCA Travaux</td>
+        <td class="td-titre">Cahier des charges pour la direction des travaux de désamiantage <span class="lien-icone">↗</span></td>
+        <td><span class="badge norme">Norme</span></td><td class="td-date">2023</td>
+      </tr>
     </tbody>
   </table>
 </div>
 
+<!-- VAUD -->
 <div class="section">
   <div class="section-header">
-    <h2>🏠 Législation cantonale</h2>
-    <span class="count-badge">7 cantons — 23 textes</span>
+    <h2>🔵 Canton de Vaud (VD)</h2>
+    <span class="count-badge">5 textes</span>
   </div>
   <table>
-    <thead><tr><th>Canton</th><th>Référence</th><th>Polluants requis</th><th>Màj</th></tr></thead>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
     <tbody>
-      <tr><td><span class="badge vd">VD</span></td><td>LATC art. 103a + Directive application + Compléments directive</td><td>Amiante</td><td class="td-date">2023</td></tr>
-      <tr><td><span class="badge vd">VD</span></td><td>Directive intercantonale romande — élimination déchets amiantés</td><td>Amiante</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge vd">VD</span></td><td>Page officielle diagnostic et assainissement amiante</td><td>Amiante</td><td class="td-date">2023</td></tr>
-      <tr><td><span class="badge vd">VD</span></td><td>LASP — Loi sur l'assainissement des sites pollués</td><td>HAP, Métaux lourds, PCB</td><td class="td-date">2006</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>LCI + RSDEB K 1 70.14</td><td>Amiante, Plomb, PCB, HAP, HBCD</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive 1 — Diagnostic amiante avant travaux</td><td>Amiante</td><td class="td-date">05.2022</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive 2 — Assainissement matériaux amiantés</td><td>Amiante</td><td class="td-date">05.2022</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive — Plomb</td><td>Plomb</td><td class="td-date">2022</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive — PCB</td><td>PCB</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive — HAP</td><td>HAP</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>SABRA Directive — HBCD</td><td>HBCD</td><td class="td-date">10.2023</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>Guides pratiques travaux sans danger — par corps de métier</td><td>Amiante, PCB, Plomb</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge ge">GE</span></td><td>Liste experts et entreprises agréés SABRA</td><td>Amiante, PCB</td><td class="td-date">2024</td></tr>
-      <tr><td><span class="badge vs">VS</span></td><td>Notice DMTE — Diagnostic polluants bâtiment + Page officielle SCA</td><td>Amiante, PCB, HAP, Plomb</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge fr">FR</span></td><td>Directive DAEC/SEAS — Diagnostic polluants + Page officielle</td><td>Amiante, Plomb, PCB</td><td class="td-date">2022</td></tr>
-      <tr><td><span class="badge ne">NE</span></td><td>Directive SENE — Diagnostic polluants + CANEPO</td><td>Amiante, Plomb, PCB, HAP</td><td class="td-date">2021</td></tr>
-      <tr><td><span class="badge be">BE</span></td><td>Directive AGR — Diagnostic polluants + Laboratoire cantonal</td><td>Amiante, Plomb</td><td class="td-date">2022</td></tr>
-      <tr><td><span class="badge ju">JU</span></td><td>Directive SEC — Diagnostic amiante + Recueil systématique des lois</td><td>Amiante, Plomb</td><td class="td-date">2022</td></tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.rsvd.ch/fr/Corpus/7/7_1/RSVaud_721_01.htm')">
+        <td class="td-ref">LATC art.103a</td>
+        <td class="td-titre">LATC art. 103a — Diagnostic amiante obligatoire avant travaux <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2011</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.vd.ch/territoire-et-construction/amiante-1/bases-legales')">
+        <td class="td-ref">Directive LATC</td>
+        <td class="td-titre">Directive d'application LATC — Diagnostic amiante (PDF officiel) <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.vd.ch/territoire-et-construction/amiante-1/complements-a-la-directive')">
+        <td class="td-ref">Compléments directive</td>
+        <td class="td-titre">Compléments à la directive LATC — Diagnostics AvT et UN <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.vd.ch/territoire-et-construction/amiante-1/diagnostic-et-assainissement')">
+        <td class="td-ref">Diagnostic VD</td>
+        <td class="td-titre">Page officielle diagnostic et assainissement amiante <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.vd.ch/environnement/sites-pollues/legislation-et-documentation')">
+        <td class="td-ref">LASP VD</td>
+        <td class="td-titre">LASP — Loi sur l'assainissement des sites pollués <span class="lien-icone">↗</span></td>
+        <td><span class="badge hap">HAP/PCB</span></td><td class="td-date">2006</td>
+      </tr>
     </tbody>
   </table>
 </div>
 
+<!-- GENÈVE -->
 <div class="section">
   <div class="section-header">
-    <h2>📋 Fiches techniques SUVA surveillées</h2>
+    <h2>🟡 Canton de Genève (GE)</h2>
+    <span class="count-badge">10 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/legislation/rsg/f/s/rsg_L5_05.html')">
+        <td class="td-ref">LCI GE</td>
+        <td class="td-titre">LCI — Loi sur les constructions et installations <span class="lien-icone">↗</span></td>
+        <td><span class="badge ge">5 polluants</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://silgeneve.ch/legis/data/rsg_k1_70p14.htm')">
+        <td class="td-ref">RSDEB K 1 70.14</td>
+        <td class="td-titre">RSDEB — Règlement sur les substances dangereuses dans l'environnement bâti <span class="lien-icone">↗</span></td>
+        <td><span class="badge ge">5 polluants</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/directives-amiante')">
+        <td class="td-ref">SABRA Dir. Amiante 1</td>
+        <td class="td-titre">Directive 1 — Diagnostic amiante avant travaux <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">05.2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/11248/annexe/file/51947')">
+        <td class="td-ref">SABRA Dir. Amiante 2</td>
+        <td class="td-titre">Directive 2 — Assainissement matériaux contenant de l'amiante <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">05.2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/directives-plomb')">
+        <td class="td-ref">SABRA Dir. Plomb</td>
+        <td class="td-titre">Directive — Diagnostic et travaux sur peintures contenant du plomb <span class="lien-icone">↗</span></td>
+        <td>Plomb</td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/amiante-pcb-plomb-travaux-renovation-demolition/bases-legales-directives-substances-dangereuses')">
+        <td class="td-ref">SABRA Dir. PCB</td>
+        <td class="td-titre">Directive — Diagnostic et assainissement matériaux contenant des PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge pcb">PCB</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/amiante-pcb-plomb-travaux-renovation-demolition/bases-legales-directives-substances-dangereuses')">
+        <td class="td-ref">SABRA Dir. HAP</td>
+        <td class="td-titre">Directive — Diagnostic et assainissement matériaux contenant des HAP <span class="lien-icone">↗</span></td>
+        <td><span class="badge hap">HAP</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/directives-hbcd')">
+        <td class="td-ref">SABRA Dir. HBCD</td>
+        <td class="td-titre">Directive — Diagnostic et assainissement matériaux contenant de l'HBCD <span class="lien-icone">↗</span></td>
+        <td>HBCD</td><td class="td-date">10.2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/guides-pratiques-travaux-danger-amiante-pcb-plomb')">
+        <td class="td-ref">Guides pratiques</td>
+        <td class="td-titre">Guides pratiques travaux sans danger — par corps de métier (n°2 à 6) <span class="lien-icone">↗</span></td>
+        <td><span class="badge ge">Amiante/PCB/Pb</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ge.ch/document/3175/telecharger')">
+        <td class="td-ref">Liste experts SABRA</td>
+        <td class="td-titre">Liste officielle experts et entreprises agréés amiante et PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante/PCB</span></td><td class="td-date">2024</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- VALAIS -->
+<div class="section">
+  <div class="section-header">
+    <h2>🔴 Canton du Valais (VS)</h2>
+    <span class="count-badge">2 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://www.vs.ch/documents/19415/13830766/20211105_def_MerkblattNotice_FR.pdf')">
+        <td class="td-ref">VS Notice DMTE</td>
+        <td class="td-titre">Notice DMTE — Diagnostic des polluants du bâtiment avant travaux <span class="lien-icone">↗</span></td>
+        <td><span class="badge vs">Amiante/PCB/HAP/Pb</span></td><td class="td-date">11.2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://lex.vs.ch/app/fr/texts_of_law/705.1')">
+        <td class="td-ref">LC VS</td>
+        <td class="td-titre">Loi sur les constructions — Diagnostic amiante, plomb, PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge vs">Amiante/PCB/HAP/Pb</span></td><td class="td-date">2022</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FRIBOURG -->
+<div class="section">
+  <div class="section-header">
+    <h2>🟤 Canton de Fribourg (FR)</h2>
+    <span class="count-badge">2 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://bdlf.fr.ch/app/fr/texts_of_law/710.1')">
+        <td class="td-ref">LAC FR</td>
+        <td class="td-titre">LAC — Loi sur l'aménagement du territoire et les constructions <span class="lien-icone">↗</span></td>
+        <td><span class="badge fr">Amiante/Plomb/PCB</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.fr.ch/DAEC')">
+        <td class="td-ref">FR Directive DAEC</td>
+        <td class="td-titre">Directive DAEC/SEAS — Diagnostic polluants bâtiment <span class="lien-icone">↗</span></td>
+        <td><span class="badge fr">Amiante/Plomb/PCB</span></td><td class="td-date">2022</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- NEUCHÂTEL -->
+<div class="section">
+  <div class="section-header">
+    <h2>🟢 Canton de Neuchâtel (NE)</h2>
+    <span class="count-badge">2 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://rsn.ne.ch/DATA/program/books/RSN2021/20216/htm/7201.htm')">
+        <td class="td-ref">LConstr NE</td>
+        <td class="td-titre">Loi sur les constructions — Diagnostic amiante, plomb, PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge ne">Amiante/Plomb/PCB</span></td><td class="td-date">2021</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.ne.ch/autorites/DDTE/SENE/Pages/Amiante.aspx')">
+        <td class="td-ref">NE Directive SENE</td>
+        <td class="td-titre">Directive SENE — Diagnostic polluants + CANEPO <span class="lien-icone">↗</span></td>
+        <td><span class="badge ne">Amiante/Plomb/PCB</span></td><td class="td-date">2021</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- BERNE -->
+<div class="section">
+  <div class="section-header">
+    <h2>🟠 Canton de Berne (BE)</h2>
+    <span class="count-badge">2 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://www.belex.sites.be.ch/app/fr/texts_of_law/721.0')">
+        <td class="td-ref">BauG BE</td>
+        <td class="td-titre">BauG — Loi sur les constructions — Polluants de construction <span class="lien-icone">↗</span></td>
+        <td><span class="badge be">Amiante/Plomb</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.be.ch/de/start/themen/bauen-und-wohnen/bauen/baubewilligung/schadstoffe.html')">
+        <td class="td-ref">BE Directive AGR</td>
+        <td class="td-titre">Directive AGR — Diagnostic polluants + Laboratoire cantonal <span class="lien-icone">↗</span></td>
+        <td><span class="badge be">Amiante/Plomb</span></td><td class="td-date">2022</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- JURA -->
+<div class="section">
+  <div class="section-header">
+    <h2>🔴 Canton du Jura (JU)</h2>
+    <span class="count-badge">2 textes</span>
+  </div>
+  <table>
+    <thead><tr><th>Référence</th><th>Titre</th><th>Polluants</th><th>Màj</th></tr></thead>
+    <tbody>
+      <tr class="clickable" onclick="ouvrirLien('https://rsju.jura.ch/app/fr/texts_of_law/701.1')">
+        <td class="td-ref">LC JU</td>
+        <td class="td-titre">Loi sur les constructions — Diagnostic amiante <span class="lien-icone">↗</span></td>
+        <td><span class="badge ju">Amiante/Plomb</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.jura.ch/DEN/SEC/Themes/Dechets/Dechets-de-chantier.html')">
+        <td class="td-ref">JU Directive SEC</td>
+        <td class="td-titre">Directive SEC — Diagnostic amiante et déchets de chantier <span class="lien-icone">↗</span></td>
+        <td><span class="badge ju">Amiante/Plomb</span></td><td class="td-date">2022</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- FICHES SUVA -->
+<div class="section">
+  <div class="section-header">
+    <h2>📋 Fiches techniques SUVA</h2>
     <span class="count-badge">25 fiches</span>
   </div>
   <table>
     <thead><tr><th>N°</th><th>Titre</th><th>Catégorie</th><th>Màj</th></tr></thead>
     <tbody>
-      <tr><td class="td-ref">33031</td><td>Enlèvement panneaux légers amiantés à l'air libre</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">09.2023</td></tr>
-      <tr><td class="td-ref">33036</td><td>Assainissement panneaux légers — surfaces &lt; 0,5 m²</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
-      <tr><td class="td-ref">33047</td><td>Enlèvement revêtements amiantés faiblement agglomérés</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33049</td><td>Colles bitumineuses et amiante fortement aggloméré</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33056</td><td>Aspirateurs classe H — spécification amiante</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td></tr>
-      <tr><td class="td-ref">33063</td><td>Mise en décharge — déchets amiantés</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td></tr>
-      <tr><td class="td-ref">33067</td><td>Perçage carrelage avec colle amiantée</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33073</td><td>Matériaux isolants amiantés — procédure désamiantage</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">03.2022</td></tr>
-      <tr><td class="td-ref">33074</td><td>Démontage tuyaux sans détérioration</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33075</td><td>Isolation tuyaux amiantés — découpage/cisaillement</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td></tr>
-      <tr><td class="td-ref">33077</td><td>Enlèvement carreaux colle amiantée — jusqu'à 5 m²</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33098</td><td>Nettoyage équipements contaminés — infos loueurs</td><td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33106</td><td>Travaux sur matériaux contenant du goudron (HAP)</td><td><span class="badge hap">HAP</span></td><td class="td-date">11.2023</td></tr>
-      <tr><td class="td-ref">33111</td><td>Déconstruction joints d'étanchéité PCB</td><td><span class="badge pcb">PCB</span></td><td class="td-date">04.2024</td></tr>
-      <tr><td class="td-ref">33112</td><td>Décapage mécanique des peintures aux PCB</td><td><span class="badge pcb">PCB</span></td><td class="td-date">07.2024</td></tr>
-      <tr><td class="td-ref">67165</td><td>Travaux anticorrosion — liste de contrôle métaux lourds</td><td><span class="badge metaux">Métaux lourds</span></td><td class="td-date">2022</td></tr>
-      <tr><td class="td-ref">33097</td><td>Laine de verre et laine de roche — pose et dépose</td><td><span class="badge laines">Laines minérales</span></td><td class="td-date">2022</td></tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/retrait-de-panneaux-amiantees-a-l-air-libre/standard-variante--33031.F')">
+        <td class="td-ref">33031</td><td class="td-titre">Enlèvement panneaux légers amiantés à l'air libre <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">09.2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/retrait-de-panneaux-legers-amiantes-par-des-pros---fiche-thematique/retrait-de-panneaux-legers-amiantes-par-des-pros---fiche-thematique--33036.F')">
+        <td class="td-ref">33036</td><td class="td-titre">Assainissement panneaux légers — surfaces &lt; 0,5 m² <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33047.F')">
+        <td class="td-ref">33047</td><td class="td-titre">Enlèvement revêtements amiantés faiblement agglomérés <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/enlever-les-revetements-de-sols-et-de-parois-contenant-de-l-amiante-fortement-agglomere-en-toute-securite/standard-variante--33049.F')">
+        <td class="td-ref">33049</td><td class="td-titre">Colles bitumineuses et amiante fortement aggloméré <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/aspirateurs-de-classe-h-avec-specification-amiante---fiche-thematique--33056.F')">
+        <td class="td-ref">33056</td><td class="td-titre">Aspirateurs classe H — spécification amiante <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/mesures-de-protection-pour-la-mise-en-decharge-de-dechets-amiantes/standard-variante--33063.F')">
+        <td class="td-ref">33063</td><td class="td-titre">Mise en décharge — déchets amiantés fortement agglomérés <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/mesures-de-protection-lors-de-l-elimination-de-l-amiante-faiblement-agglomere/standard-variante--33063.F')">
+        <td class="td-ref">33063</td><td class="td-titre">Élimination — amiante faiblement aggloméré <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33067.F')">
+        <td class="td-ref">33067</td><td class="td-titre">Perçage carrelage avec colle amiantée <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33073.F')">
+        <td class="td-ref">33073</td><td class="td-titre">Matériaux isolants amiantés — procédure désamiantage <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">03.2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33074.F')">
+        <td class="td-ref">33074</td><td class="td-titre">Démontage tuyaux sans détérioration <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/isolations-de-tuyaux-amiantees-3--decoupage-ou-cisaillement-de-tuyaux---fiche-thematique/standard-variante--33075.F')">
+        <td class="td-ref">33075</td><td class="td-titre">Isolation tuyaux amiantés — découpage/cisaillement (pros) <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">04.2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/standard-variante--33077.F')">
+        <td class="td-ref">33077</td><td class="td-titre">Enlèvement carreaux colle amiantée — jusqu'à 5 m² <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/nettoyage-d-equipements-contamines-par-l-amiante---infos-pour-loueurs--33098.F')">
+        <td class="td-ref">33098</td><td class="td-titre">Nettoyage équipements contaminés — infos loueurs <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-CH/materiel/fiche-thematique/mastic-de-fenetres-amiante-1-apercu')">
+        <td class="td-ref">Mastic 1</td><td class="td-titre">Mastic fenêtres amianté — aperçu techniques de retrait <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-CH/materiel/fiche-thematique/mastic-de-fenetres-amiante-3-retrait-par-rechauffement')">
+        <td class="td-ref">Mastic 3</td><td class="td-titre">Mastic fenêtres amianté — retrait par réchauffement <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/regles-et-conseils/standard-variante--84024.F')">
+        <td class="td-ref">84024</td><td class="td-titre">Identifier et manipuler produits amiantés (dépliant 34p.) <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">01.2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/regles-et-conseils/standard-variante--84052.F')">
+        <td class="td-ref">84052</td><td class="td-titre">Règles de branche amiante — plâtriers-peintres <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/regles-et-conseils/identifier--evaluer-et-manipuler-correctement-les-produits-amiantesregles-de-la-branche-pour-les-techniciens-du-batiment/identifier--evaluer-et-manipuler-correctement-les-produits-amiantesregles-de-la-branche-pour-les-techniciens-du-batiment--84053.F')">
+        <td class="td-ref">84053</td><td class="td-titre">Règles de branche amiante — techniciens du bâtiment <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/regles-et-conseils/regles-vitales-amiante---batiment-et-genie-civil/regles-vitales-amiante---batiment-et-genie-civil--84060.F')">
+        <td class="td-ref">84060</td><td class="td-titre">Règles vitales amiante — bâtiment et génie civil <span class="lien-icone">↗</span></td>
+        <td><span class="badge amiante">Amiante</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/transformation-et-deconstruction-de-materiaux-contenant-du-goudron/standard-variante--33106.F')">
+        <td class="td-ref">33106</td><td class="td-titre">Travaux sur matériaux contenant du goudron (HAP) <span class="lien-icone">↗</span></td>
+        <td><span class="badge hap">HAP</span></td><td class="td-date">11.2023</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/des-joints-d-etancheite-contenant-des-pcb/standard-variante--33111.F')">
+        <td class="td-ref">33111</td><td class="td-titre">Déconstruction joints d'étanchéité PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge pcb">PCB</span></td><td class="td-date">04.2024</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/33112-pcb-haltige-farben/attention-lors-du-decapage-mecanique-des-peintures-aux-pcb--33112.F')">
+        <td class="td-ref">33112</td><td class="td-titre">Décapage mécanique des peintures aux PCB <span class="lien-icone">↗</span></td>
+        <td><span class="badge pcb">PCB</span></td><td class="td-date">07.2024</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/listes-de-controle/standard-variante--67165.F')">
+        <td class="td-ref">67165</td><td class="td-titre">Travaux anticorrosion — liste de contrôle métaux lourds <span class="lien-icone">↗</span></td>
+        <td><span class="badge metaux">Métaux lourds</span></td><td class="td-date">2022</td>
+      </tr>
+      <tr class="clickable" onclick="ouvrirLien('https://www.suva.ch/fr-ch/download/fiches-thematiques/laine-de-verre-et-laine-de-roche--pose-et-depose-en-securite/standard-variante--33097.F')">
+        <td class="td-ref">33097</td><td class="td-titre">Laine de verre et laine de roche — pose et dépose <span class="lien-icone">↗</span></td>
+        <td><span class="badge laines">Laines minérales</span></td><td class="td-date">2022</td>
+      </tr>
     </tbody>
   </table>
 </div>
 
 <footer>
   Généré automatiquement chaque lundi par GitHub Actions •
-  Sources : <a href="https://www.fedlex.admin.ch" target="_blank">fedlex.admin.ch</a> •
+  <a href="https://www.fedlex.admin.ch" target="_blank">fedlex.admin.ch</a> •
   <a href="https://www.suva.ch" target="_blank">suva.ch</a> •
   <a href="https://www.asca-vabs.ch" target="_blank">asca-vabs.ch</a> •
   <a href="feed.xml" target="_blank">Flux SUVA</a> •
@@ -228,10 +557,8 @@
 </footer>
 
 <script>
-function copier(id, btn) {
-  const url = document.getElementById(id).textContent.trim();
-  copierTexte(url, btn);
-}
+function ouvrirLien(url) { window.open(url, '_blank'); }
+function copier(id, btn) { copierTexte(document.getElementById(id).textContent.trim(), btn); }
 function copierTexte(url, btn) {
   navigator.clipboard.writeText(url).then(() => {
     const orig = btn.textContent;
